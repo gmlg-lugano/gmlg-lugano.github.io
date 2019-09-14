@@ -1,0 +1,28 @@
+.collapsible {
+  cursor: pointer;
+}
+
+.collapse-active, .collapsible:hover {
+  
+}
+
+.collapse-content {
+  border-left: solid 1px #dddddd;
+  font-style: italic;
+  margin: 1em 1em;
+  padding: 0em 1em;
+  /*
+  margin: 1em 0 0 0;
+  max-height: 0;
+  max-width: 800px;*/
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+  content: 'Read more.';
+}
+
+.collapse-active:after {
+  content: "Read less."; /* Unicode character for "minus" sign (-) */
+}
