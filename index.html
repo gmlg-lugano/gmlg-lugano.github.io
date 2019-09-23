@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Graph Machine Learning Lugano</title>
+		<title>Graph Machine Learning Group</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,8 +24,8 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Graph & Machine Learning Group</h1>
-						<p>Machine learning &bull; Graph-based learning &bull; Non-stationary environments &bull; Dynamics of RNNs &bull; Lifelong learning<br/>
+						<h1>Graph Machine Learning Group</h1>
+						<p>Machine learning &bull; Graph-based learning &bull; Non-stationary environments &bull; Dynamics of RNNs<br/>
 						<span class="icon solid fa-map-marker-alt"></span>&nbsp;&nbsp;<a href="https://usi.ch">Università della Svizzera italiana</a></p>
 					</header>
 
@@ -124,6 +124,7 @@
 									<h2>Publications</h2>
 								</header>
 								<ul class="alt" style="text-align: left;">
+									<h2>Graph Neural Networks</h2>
 									<li>
 										<a href="https://arxiv.org/abs/1909.03790"><b>Distance-Preserving Graph Embeddings from Random Neural Features.</b></a>&nbsp;
 										Daniele Zambon, Cesare Alippi, Lorenzo Livi. <br>
@@ -143,6 +144,16 @@
 										</div>
 									</li>
 									<li>
+										<a href="https://arxiv.org/abs/1901.01343"><b>Graph Neural Networks with Convolutional ARMA Filters.</b></a>&nbsp;
+										F. M. Bianchi, D. Grattarola, L. Livi, C. Alippi. <br>
+										Preprint (2019). <br>
+										<!-- <a class="collapsible"></a> -->
+										<div class="collapse-content">
+											We propose a novel graph convolutional layer based on auto-regressive moving average (ARMA) filters that, compared to the polynomial ones, provide a more flexible response thanks to a rich transfer function that accounts for the concept of state. We implement the ARMA filter with a recursive and distributed formulation, obtaining a convolutional layer that is efficient to train, is localized in the node space and can be applied to graphs with different topologies.
+										</div>
+									</li>
+									<h2>Learning in non-stationary environments</h2>
+									<li>
 										<a href="https://arxiv.org/abs/1907.09207"><b>Deep Learning for Time Series Forecasting: The Electric Load Case.</b></a>&nbsp;
 										Alberto Gasparin, Slobodan Lukovic, Cesare Alippi. <br>
 										Preprint (2019). <br>
@@ -152,48 +163,12 @@
 										</div>
 									</li>
 									<li>
-										<a href="https://arxiv.org/abs/1903.11691"><b>Echo State Networks with Self-Normalizing Activations on the Hyper-Sphere.</b></a>&nbsp;
-										Pietro Verzelli, Cesare Alippi, Lorenzo Livi. <br>
-										Nature Scientific Reports (2019). <br>
-										<!-- <a class="collapsible"></a> -->
-										<div class="collapse-content">
-											We propose a model of echo state networks that eliminates critical dependence on hyper-parameters, resulting in networks that provably cannot enter a chaotic regime and, at the same time, denotes nonlinear behavior in phase space characterized by a large memory of past inputs, comparable to the one of linear networks. Our contribution is supported by experiments corroborating our theoretical findings, showing that the proposed model displays dynamics that are rich-enough to approximate many common nonlinear systems used for benchmarking. 
-										</div>
-									</li>
-									<li>
 										<a href="https://arxiv.org/abs/1903.07299"><b>Autoregressive Models for Sequences of Graphs.</b></a>&nbsp;
 										D. Zambon, D. Grattarola, L. Livi, C. Alippi. <br>
 										International Joint Conference on Neural Networks (2019). <br>
 										<!-- <a class="collapsible"></a> -->
 										<div class="collapse-content">
 											This paper proposes an autoregressive (AR) model for sequences of graphs, which generalizes traditional AR models. A first novelty consists in formalizing the AR model for a very general family of graphs, characterized by a variable topology, and attributes associated with nodes and edges. A graph neural network is also proposed to learn the AR function associated with the graph-generating process, and subsequently predict the next graph in a sequence.
-										</div>
-									</li>
-									<li>
-										<a href="https://arxiv.org/abs/1901.01343"><b>Graph Neural Networks with Convolutional ARMA Filters.</b></a>&nbsp;
-										F. M. Bianchi, D. Grattarola, L. Livi, C. Alippi. <br>
-										Preprint (2019). <br>
-										<!-- <a class="collapsible"></a> -->
-										<div class="collapse-content">
-											We propose a novel graph convolutional layer based on auto-regressive moving average (ARMA) filters that, compared to the polynomial ones, provide a more flexible response thanks to a rich transfer function that accounts for the concept of state. We implement the ARMA filter with a recursive and distributed formulation, obtaining a convolutional layer that is efficient to train, is localized in the node space and can be applied to graphs with different topologies.
-										</div>
-									</li>
-									<li>
-										<a href="https://arxiv.org/abs/1812.04314"><b>Adversarial Autoencoders with Constant-Curvature Latent Manifolds.</b></a>&nbsp;
-										D. Grattarola, L. Livi, C. Alippi. <br>
-										Applied Soft Computing (2019) <br>
-										<!-- <a class="collapsible"></a> -->
-										<div class="collapse-content">
-											 We introduce the constant-curvature manifold adversarial autoencoder (CCM-AAE), a probabilistic generative model trained to represent a data distribution on a constant-curvature Riemannian manifold (CCM). Our method works by matching the aggregated posterior of the CCM-AAE with a probability distribution defined on a CCM, so that the encoder implicitly learns to represent data on the CCM to fool the discriminator network. The geometric constraint is also explicitly imposed by jointly training the CCM-AAE to maximize the membership degree of the embeddings to the CCM.
-										</div>
-									</li>
-									<li>
-										<a href="https://arxiv.org/abs/1810.01742"><b>A Characterization of the Edge of Criticality in Binary Echo State Networks.</b></a>&nbsp;
-										Pietro Verzelli, Lorenzo Livi, Cesare Alippi. <br>
-										IEEE International Workshop on Machine Learning for Signal Processing (2018). <br>
-										<!-- <a class="collapsible"></a> -->
-										<div class="collapse-content">
-											We propose binary echo state networks (ESNs), which are architecturally equivalent to standard ESNs but consider binary activation functions and binary recurrent weights. For these networks, we derive a closed-form expression for the edge of criticality (EoC) in the autonomous case and perform simulations in order to assess their behavior in the case of noisy neurons and in the presence of a signal. We propose a theoretical explanation for the fact that the variance of the input plays a major role in characterizing the EoC. 
 										</div>
 									</li>
 									<li>
@@ -241,6 +216,37 @@
 											We consider a methodology for detecting changes in sequences of graphs. Changes are recognized by embedding each graph into a vector space, where conventional change detection procedures exist and can be easily applied. We introduce the methodology and focus on expanding experimental evaluations on controlled yet relevant examples involving geometric graphs and Markov chains.
 										</div>
 									</li>
+									<h2>Dynamics of RNNs</h2>
+									<li>
+										<a href="https://arxiv.org/abs/1903.11691"><b>Echo State Networks with Self-Normalizing Activations on the Hyper-Sphere.</b></a>&nbsp;
+										Pietro Verzelli, Cesare Alippi, Lorenzo Livi. <br>
+										Nature Scientific Reports (2019). <br>
+										<!-- <a class="collapsible"></a> -->
+										<div class="collapse-content">
+											We propose a model of echo state networks that eliminates critical dependence on hyper-parameters, resulting in networks that provably cannot enter a chaotic regime and, at the same time, denotes nonlinear behavior in phase space characterized by a large memory of past inputs, comparable to the one of linear networks. Our contribution is supported by experiments corroborating our theoretical findings, showing that the proposed model displays dynamics that are rich-enough to approximate many common nonlinear systems used for benchmarking. 
+										</div>
+									</li>
+									<li>
+										<a href="https://arxiv.org/abs/1810.01742"><b>A Characterization of the Edge of Criticality in Binary Echo State Networks.</b></a>&nbsp;
+										Pietro Verzelli, Lorenzo Livi, Cesare Alippi. <br>
+										IEEE International Workshop on Machine Learning for Signal Processing (2018). <br>
+										<!-- <a class="collapsible"></a> -->
+										<div class="collapse-content">
+											We propose binary echo state networks (ESNs), which are architecturally equivalent to standard ESNs but consider binary activation functions and binary recurrent weights. For these networks, we derive a closed-form expression for the edge of criticality (EoC) in the autonomous case and perform simulations in order to assess their behavior in the case of noisy neurons and in the presence of a signal. We propose a theoretical explanation for the fact that the variance of the input plays a major role in characterizing the EoC. 
+										</div>
+									</li>
+									<h2>Others</h2>
+									<li>
+										<a href="https://arxiv.org/abs/1812.04314"><b>Adversarial Autoencoders with Constant-Curvature Latent Manifolds.</b></a>&nbsp;
+										D. Grattarola, L. Livi, C. Alippi. <br>
+										Applied Soft Computing (2019) <br>
+										<!-- <a class="collapsible"></a> -->
+										<div class="collapse-content">
+											 We introduce the constant-curvature manifold adversarial autoencoder (CCM-AAE), a probabilistic generative model trained to represent a data distribution on a constant-curvature Riemannian manifold (CCM). Our method works by matching the aggregated posterior of the CCM-AAE with a probability distribution defined on a CCM, so that the encoder implicitly learns to represent data on the CCM to fool the discriminator network. The geometric constraint is also explicitly imposed by jointly training the CCM-AAE to maximize the membership degree of the embeddings to the CCM.
+										</div>
+									</li>
+									
+									
 								</ul>
 							</section>
 
