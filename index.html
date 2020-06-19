@@ -134,38 +134,39 @@
 								</header>
 								<ul class="alt" style="text-align: left;">
 									<h2>Graph Neural Networks</h2>
+                                    <li>
+                                        <a href="https://arxiv.org/abs/1909.03790"><b>Graph Random Neural Features for Distance-Preserving Graph Representations.</b></a><br>
+                                        Daniele Zambon, Cesare Alippi, Lorenzo Livi. <br>
+                                        International Conference on Machine Learning (2020). <br>
+                                        <a class="collapsible"></a>
+                                        <div class="collapse-content">
+                                           Graph Random Neural Features(GRNF) is a novel embedding method from graph-structured data to real vectors based on a family of graph neural networks. GRNF can be used within traditional processing methods or as a training-free input layer of a graph neural network. 
+                                           The theoretical guarantees that accompany GRNF ensure that the considered graph distance is metric, hence allowing to distinguish any pair of non-isomorphic graphs, and that GRNF approximately preserves its metric structure.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="https://arxiv.org/abs/1907.00481"><b>Spectral Clustering with Graph Neural Networks for Graph Pooling.</b></a><br>
+                                        Filippo Maria Bianchi, Daniele Grattarola, Cesare Alippi. <br>
+                                        International Conference on Machine Learning (2020). <br>
+                                        <a class="collapsible"></a>
+                                        <div class="collapse-content">
+                                           We propose a graph clustering approach that addresses some limitations of the spectral clustering algorithm. We formulate a continuous relaxation of the normalized minCUT problem and train a GNN to compute cluster assignments that minimize this objective. Our GNN-based implementation is differentiable, does not require to compute the spectral decomposition, and learns a clustering function that can be quickly evaluated on out-of-sample graphs. From the proposed clustering method, we design a graph pooling operator that overcomes some important limitations of state-of-the-art graph pooling techniques and achieves the best performance in several supervised and unsupervised tasks.
+                                        </div>
+                                    </li>
 									<li>
-										<a href="https://arxiv.org/abs/1910.11436"><b>Hierarchical Representation Learning in Graph Neural Networks with Node Decimation Pooling.</b></a>&nbsp;
+										<a href="https://arxiv.org/abs/1910.11436"><b>Hierarchical Representation Learning in Graph Neural Networks with Node Decimation Pooling.</b></a><br>
 										Filippo Maria Bianchi, Daniele Grattarola, Lorenzo Livi, Cesare Alippi. <br>
 										Preprint (2019). <br>
-										<!-- <a class="collapsible"></a> -->
+										<a class="collapsible"></a>
 										<div class="collapse-content">
 										   We propose Node Decimation Pooling (NDP), a pooling operator for GNNs that generates coarsened versions of a graph by leveraging on its topology only. During training, the GNN learns new representations for the vertices and fits them to a pyramid of coarsened graphs, which is computed in a pre-processing step. As theoretical contributions, we first demonstrate the equivalence between the MAXCUT partition and the node decimation procedure on which NDP is based. Then, we propose a procedure to sparsify the coarsened graphs for reducing the computational complexity in the GNN; we also demonstrate that it is possible to drop many edges without significantly altering the graph spectra of coarsened graphs.
 										</div>
 									</li>
 									<li>
-										<a href="https://arxiv.org/abs/1909.03790"><b>Distance-Preserving Graph Embeddings from Random Neural Features.</b></a>&nbsp;
-										Daniele Zambon, Cesare Alippi, Lorenzo Livi. <br>
-										Preprint (2019). <br>
-										<!-- <a class="collapsible"></a> -->
-										<div class="collapse-content">
-										   We present Graph Random Neural Features (GRNF), a novel embedding method from graph-structured data to real vectors based on a family of graph neural networks. The embedding naturally deals with graph isomorphism and preserves, in probability, the metric structure of graph domain. In addition to being an explicit embedding method, it also allows to efficiently and effectively approximate graph metric distances (as well as complete kernel functions); a criterion to select the embedding dimension trading off the approximation accuracy with the computational cost is also provided.
-										</div>
-									</li>
-									<li>
-										<a href="https://arxiv.org/abs/1907.00481"><b>MinCUT pooling in Graph Neural Networks.</b></a>&nbsp;
-										Filippo Maria Bianchi, Daniele Grattarola, Cesare Alippi. <br>
-										Preprint (2019). <br>
-										<!-- <a class="collapsible"></a> -->
-										<div class="collapse-content">
-										   We propose a pooling operation for GNNs that leverages a differentiable unsupervised loss based on the minCUT optimization objective. For each node, our method learns a soft cluster assignment vector that depends on the node features, the target inference task (e.g., graph classification), and, thanks to the minCUT objective, also on the graph connectivity.
-										</div>
-									</li>
-									<li>
-										<a href="https://arxiv.org/abs/1901.01343"><b>Graph Neural Networks with Convolutional ARMA Filters.</b></a>&nbsp;
+										<a href="https://arxiv.org/abs/1901.01343"><b>Graph Neural Networks with Convolutional ARMA Filters.</b></a><br>
 										Filippo Maria Bianchi, Daniele Grattarola, Lorenzo Livi, Cesare Alippi. <br>
 										Preprint (2019). <br>
-										<!-- <a class="collapsible"></a> -->
+										<a class="collapsible"></a>
 										<div class="collapse-content">
 											We propose a novel graph convolutional layer based on auto-regressive moving average (ARMA) filters that, compared to the polynomial ones, provide a more flexible response thanks to a rich transfer function that accounts for the concept of state. We implement the ARMA filter with a recursive and distributed formulation, obtaining a convolutional layer that is efficient to train, is localized in the node space and can be applied to graphs with different topologies.
 										</div>
@@ -173,64 +174,64 @@
 
 									<h2>Learning in non-stationary environments</h2>
                                     <li>
-                                        <a href="https://arxiv.org/abs/1805.07113"><b>Change-Point Methods on a Sequence of Graphs.</b></a>&nbsp;
+                                        <a href="https://arxiv.org/abs/1805.07113"><b>Change-Point Methods on a Sequence of Graphs.</b></a><br>
                                         Daniele Zambon, Cesare Alippi, Lorenzo Livi. <br>
                                         IEEE Transactions on Signal Processing (2019). <br>
-                                        <!-- <a class="collapsible"></a> -->
+                                        <a class="collapsible"></a>
                                         <div class="collapse-content">
                                             Given a finite sequence of graphs, we propose a methodology to identify possible changes in stationarity in the stochastic process that generated such graphs. We consider a general family of attributed graphs for which both topology (vertices and edges) and associated attributes are allowed to change over time, without violating the stationarity hypothesis. Novel Change-Point Methods (CPMs) are proposed that map graphs onto vectors, apply a suitable statistical test in vector space and detect changes –if any– according to a user-defined confidence level; an estimate for the change point is provided as well. We ground our methods on theoretical results that show how the inference in the numerical vector space is related to the one in graph domain, and vice-versa. 
                                         </div>
                                     </li>
 									<li>
-										<a href="https://arxiv.org/abs/1907.09207"><b>Deep Learning for Time Series Forecasting: The Electric Load Case.</b></a>&nbsp;
+										<a href="https://arxiv.org/abs/1907.09207"><b>Deep Learning for Time Series Forecasting: The Electric Load Case.</b></a><br>
 										Alberto Gasparin, Slobodan Lukovic, Cesare Alippi. <br>
 										Preprint (2019). <br>
-										<!-- <a class="collapsible"></a> -->
+										<a class="collapsible"></a>
 										<div class="collapse-content">
 											 We review and experimentally evaluate on two real-world datasets the most recent trends in electric load forecasting, by contrasting deep learning architectures on short term forecast (one day ahead prediction). Specifically, we focus on feed-forward and recurrent neural networks, sequence to sequence models and temporal convolutional neural networks along with architectural variants.
 										</div>
 									</li>
 									<li>
-										<a href="https://arxiv.org/abs/1903.07299"><b>Autoregressive Models for Sequences of Graphs.</b></a>&nbsp;
+										<a href="https://arxiv.org/abs/1903.07299"><b>Autoregressive Models for Sequences of Graphs.</b></a><br>
 										Daniele Zambon, Daniele Grattarola, Lorenzo Livi, Cesare Alippi. <br>
 										International Joint Conference on Neural Networks (2019). <br>
-										<!-- <a class="collapsible"></a> -->
+										<a class="collapsible"></a>
 										<div class="collapse-content">
 											This paper proposes an autoregressive (AR) model for sequences of graphs, which generalizes traditional AR models. A first novelty consists in formalizing the AR model for a very general family of graphs, characterized by a variable topology, and attributes associated with nodes and edges. A graph neural network is also proposed to learn the AR function associated with the graph-generating process, and subsequently predict the next graph in a sequence.
 										</div>
 									</li>
 									<li>
-										<a href="https://arxiv.org/abs/1805.06299"><b>Change Detection in Graph Streams by Learning Graph Embeddings on Constant-Curvature Manifolds.</b></a>&nbsp;
+										<a href="https://arxiv.org/abs/1805.06299"><b>Change Detection in Graph Streams by Learning Graph Embeddings on Constant-Curvature Manifolds.</b></a><br>
 										Daniele Grattarola, Daniele Zambon, Lorenzo Livi, Cesare Alippi. <br>
 										IEEE Transactions on Neural Networks and Learning Systems (2019). <br>
-										<!-- <a class="collapsible"></a> -->
+										<a class="collapsible"></a>
 										<div class="collapse-content">
 											We focus on the problem of detecting changes in stationarity in a stream of attributed graphs. To this end, we introduce a novel change detection framework based on neural networks and Constant-curvature manifolds (CCMs), that takes into account the non-Euclidean nature of graphs. Our contribution in this work is twofold. First, via a novel approach based on adversarial learning, we compute graph embeddings by training an autoencoder to represent graphs on CCMs. Second, we introduce two novel change detection tests operating on CCMs.
 										</div>
 									</li>
 									<li>
-										<a href="https://arxiv.org/abs/1805.01360"><b>Anomaly and Change Detection in Graph Streams through Constant-Curvature Manifold Embeddings.</b></a>&nbsp;
+										<a href="https://arxiv.org/abs/1805.01360"><b>Anomaly and Change Detection in Graph Streams through Constant-Curvature Manifold Embeddings.</b></a><br>
 										Daniele Zambon, Lorenzo Livi, Cesare Alippi. <br>
 										IEEE International Joint Conference on Neural Networks (2018). <br>
-										<!-- <a class="collapsible"></a> -->
+										<a class="collapsible"></a>
 										<div class="collapse-content">
 											We investigate how embedding graphs on constant-curvature manifolds (hyper-spherical and hyperbolic manifolds) impacts on the ability to detect changes in sequences of attributed graphs. The proposed methodology consists in embedding graphs into a geometric space and perform change detection there by means of conventional methods for numerical streams.
 										</div>
 									</li>
 									<li>
-										<a href="https://arxiv.org/abs/1706.06941"><b>Concept Drift and Anomaly Detection in Graph Streams.</b></a>&nbsp;
+										<a href="https://arxiv.org/abs/1706.06941"><b>Concept Drift and Anomaly Detection in Graph Streams.</b></a><br>
 										Daniele Zambon, Cesare Alippi, Lorenzo Livi. <br>
 										IEEE Transactions on Neural Networks and Learning Systems (2018). <br>
-										<!-- <a class="collapsible"></a> -->
+										<a class="collapsible"></a>
 										<div class="collapse-content">
 											 We consider stochastic processes generating graphs and propose a methodology for detecting changes in stationarity of such processes. The methodology acts by embedding every graph of the stream into a vector domain, where a conventional multivariate change detection procedure can be easily applied. We ground the soundness of our proposal by proving several theoretical results.
 										</div>
 									</li>
 									<li>
-										<a href="https://ieeexplore.ieee.org/document/8285273"><b>Detecting Changes in Sequences of Attributed Graphs.</b></a>&nbsp;
+										<a href="https://ieeexplore.ieee.org/document/8285273"><b>Detecting Changes in Sequences of Attributed Graphs.</b></a><br>
 										Daniele Zambon, Lorenzo Livi, Cesare Alippi. <br>
 										IEEE Symposium Series on Computational Intelligence (2017). <br>
-										<!-- <a class="collapsible"></a> -->
+										<a class="collapsible"></a>
 										<div class="collapse-content">
 											We consider a methodology for detecting changes in sequences of graphs. Changes are recognized by embedding each graph into a vector space, where conventional change detection procedures exist and can be easily applied. We introduce the methodology and focus on expanding experimental evaluations on controlled yet relevant examples involving geometric graphs and Markov chains.
 										</div>
@@ -238,29 +239,29 @@
 
 									<h2>Dynamics of RNNs</h2>
 									<li>
-										<a href="https://arxiv.org/abs/1903.11691"><b>Echo State Networks with Self-Normalizing Activations on the Hyper-Sphere.</b></a>&nbsp;
+										<a href="https://arxiv.org/abs/1903.11691"><b>Echo State Networks with Self-Normalizing Activations on the Hyper-Sphere.</b></a><br>
 										Pietro Verzelli, Cesare Alippi, Lorenzo Livi. <br>
 										Nature Scientific Reports (2019). <br>
-										<!-- <a class="collapsible"></a> -->
+										<a class="collapsible"></a>
 										<div class="collapse-content">
 											We propose a model of echo state networks that eliminates critical dependence on hyper-parameters, resulting in networks that provably cannot enter a chaotic regime and, at the same time, denotes nonlinear behavior in phase space characterized by a large memory of past inputs, comparable to the one of linear networks. Our contribution is supported by experiments corroborating our theoretical findings, showing that the proposed model displays dynamics that are rich-enough to approximate many common nonlinear systems used for benchmarking. 
 										</div>
 									</li>
 									<li>
-										<a href="https://arxiv.org/abs/1810.01742"><b>A Characterization of the Edge of Criticality in Binary Echo State Networks.</b></a>&nbsp;
+										<a href="https://arxiv.org/abs/1810.01742"><b>A Characterization of the Edge of Criticality in Binary Echo State Networks.</b></a><br>
 										Pietro Verzelli, Lorenzo Livi, Cesare Alippi. <br>
 										IEEE International Workshop on Machine Learning for Signal Processing (2018). <br>
-										<!-- <a class="collapsible"></a> -->
+										<a class="collapsible"></a>
 										<div class="collapse-content">
 											We propose binary echo state networks (ESNs), which are architecturally equivalent to standard ESNs but consider binary activation functions and binary recurrent weights. For these networks, we derive a closed-form expression for the edge of criticality (EoC) in the autonomous case and perform simulations in order to assess their behavior in the case of noisy neurons and in the presence of a signal. We propose a theoretical explanation for the fact that the variance of the input plays a major role in characterizing the EoC. 
 										</div>
 									</li>
 									<h2>Others</h2>
 									<li>
-										<a href="https://arxiv.org/abs/1812.04314"><b>Adversarial Autoencoders with Constant-Curvature Latent Manifolds.</b></a>&nbsp;
+										<a href="https://arxiv.org/abs/1812.04314"><b>Adversarial Autoencoders with Constant-Curvature Latent Manifolds.</b></a><br>
 										Daniele Grattarola, Lorenzo Livi, Cesare Alippi. <br>
 										Applied Soft Computing (2019) <br>
-										<!-- <a class="collapsible"></a> -->
+										<a class="collapsible"></a>
 										<div class="collapse-content">
 											 We introduce the constant-curvature manifold adversarial autoencoder (CCM-AAE), a probabilistic generative model trained to represent a data distribution on a constant-curvature Riemannian manifold (CCM). Our method works by matching the aggregated posterior of the CCM-AAE with a probability distribution defined on a CCM, so that the encoder implicitly learns to represent data on the CCM to fool the discriminator network. The geometric constraint is also explicitly imposed by jointly training the CCM-AAE to maximize the membership degree of the embeddings to the CCM.
 										</div>
