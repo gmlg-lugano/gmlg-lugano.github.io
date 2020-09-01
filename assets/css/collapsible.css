@@ -1,5 +1,6 @@
 .collapsible {
   cursor: pointer;
+  font-size: smaller;
 }
 
 .collapse-active, .collapsible:hover {
@@ -20,9 +21,9 @@
 }
 
 .collapsible:after {
-  content: 'Read more.';
+  content: 'Show abstract.';
 }
 
 .collapse-active:after {
-  content: "Read less."; /* Unicode character for "minus" sign (-) */
+  content: "Hide."; /* Unicode character for "minus" sign (-) */
 }

@@ -3936,3 +3936,17 @@ input, select, textarea {
 			}
 
 		}
+
+/* Custom */
+
+.venue {
+	font-style: italic;
+}
+
+.authors {
+	font-weight: 100;
+}
+
+.authors::after {
+	content: '  --  ';
+}
