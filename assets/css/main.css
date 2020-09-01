@@ -2451,6 +2451,10 @@ input, select, textarea {
 					padding-top: 0;
 				}
 
+		ul.def {
+			text-align: left !important;
+		}
+
 	dl {
 		margin: 0 0 2em 0;
 	}
@@ -3274,7 +3278,7 @@ input, select, textarea {
 					display: block;
 					margin: 0 auto;
 					max-width: 75%;
-					height: 110px;
+					height: 140px;
 				}
 
 		@media screen and (max-width: 1280px) {
