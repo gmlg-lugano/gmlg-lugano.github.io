@@ -185,7 +185,7 @@
 									<li>
 										<a href="https://arxiv.org/abs/1910.11436"><b>Hierarchical Representation Learning in Graph Neural Networks with Node Decimation Pooling.</b></a><br>
 										<span class='authors'>F. M. Bianchi, D. Grattarola, L. Livi, C. Alippi</span>
-										<span class="venue">Preprint (2019)</span><br>
+										<span class="venue">IEEE Transactions on Neural Networks and Learning Systems (2020)</span><br>
 										<a class="collapsible"></a>
 										<div class="collapse-content">
 										   We propose Node Decimation Pooling (NDP), a pooling operator for GNNs that generates coarsened versions of a graph by leveraging on its topology only. During training, the GNN learns new representations for the vertices and fits them to a pyramid of coarsened graphs, which is computed in a pre-processing step. As theoretical contributions, we first demonstrate the equivalence between the MAXCUT partition and the node decimation procedure on which NDP is based. Then, we propose a procedure to sparsify the coarsened graphs for reducing the computational complexity in the GNN; we also demonstrate that it is possible to drop many edges without significantly altering the graph spectra of coarsened graphs.
@@ -194,7 +194,7 @@
 									<li>
 										<a href="https://arxiv.org/abs/1901.01343"><b>Graph Neural Networks with Convolutional ARMA Filters.</b></a><br>
 										<span class='authors'>F. M. Bianchi, D. Grattarola, L. Livi, C. Alippi</span>
-										<span class="venue">Preprint (2019)</span><br>
+										<span class="venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (2021)</span><br>
 										<a class="collapsible"></a>
 										<div class="collapse-content">
 											We propose a novel graph convolutional layer based on auto-regressive moving average (ARMA) filters that, compared to the polynomial ones, provide a more flexible response thanks to a rich transfer function that accounts for the concept of state. We implement the ARMA filter with a recursive and distributed formulation, obtaining a convolutional layer that is efficient to train, is localized in the node space and can be applied to graphs with different topologies.
@@ -202,6 +202,15 @@
 									</li>
 
 									<h2 id='lnse'>Learning in Non-Stationary Environments</h2>
+									<li>
+                                        <a href="https://openreview.net/forum?id=dlEJsyHGeaL"><b>Graph Edit Networks.</b></a><br>
+                                        <span class='authors'>B. Paassen, D. Grattarola, D.Zambon, C. Alippi, B. Hammer</span>
+                                        <span class='venue'>International Conference on Learning Representations (2021)</span> <br>
+                                        <a class="collapsible"></a>
+                                        <div class="collapse-content">
+                                           While graph neural networks have made impressive progress in classification and regression on graphs, few approaches to date perform time series prediction on graphs and those that do are mostly limited to edge changes. We suggest that graph edits are a more natural interface for graph-to-graph learning. In particular,  graph edits are general enough to describe any graph-to-graph change, not only edge changes, they are sparse, making them easier to understand for humans and more efficient computationally, and they are local, avoiding the need for pooling layers in graph neural networks. In this paper, we propose a simple linear layer - the graph edit network - which takes node embeddings as input and generates a sequence of graph edits that transform the input graph to the output graph. Theoretically, we show that a mapping between the node sets of two graphs is sufficient to construct training data for a graph edit network and that an optimal mapping yields edit scripts that are almost as short as the graph edit distance between the graphs. We further provide a proof-of-concept.
+                                        </div>
+                                    </li>
                                     <li>
                                         <a href="https://arxiv.org/abs/1805.07113"><b>Change-Point Methods on a Sequence of Graphs.</b></a><br>
                                         <span class='authors'>D. Zambon, C. Alippi, L. Livi</span>
