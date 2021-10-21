@@ -79,18 +79,18 @@
 					</div>
 				</li>
 				<li>
+					<a href="https://arxiv.org/abs/2110.05292"><b>Understanding Pooling in Graph Neural Networks.</b></a><br>
+					<span class='authors'>D. Grattarola, D. Zambon, F. M. Bianchi, C. Alippi</span>
+					<span class="venue">Preprint</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 Inspired by the conventional pooling layers in convolutional neural networks, many recent works in the field of graph machine learning have introduced pooling operators to reduce the size of graphs. The great variety in the literature stems from the many possible strategies for coarsening a graph, which may depend on different assumptions on the graph structure or the specific downstream task. In this paper we propose a formal characterization of graph pooling based on three main operations, called selection, reduction, and connection, with the goal of unifying the literature under a common framework. Following this formalization, we introduce a taxonomy of pooling operators and categorize more than thirty pooling methods proposed in recent literature. We propose criteria to evaluate the performance of a pooling operator and use them to investigate and contrast the behavior of different classes of the taxonomy on a variety of tasks.
+					</div>
+				</li>
+				<li>
 					<a href=""><b>Deep learning for graphs (special session at ESANN 2021).</b></a><br>
 					<span class='authors'>D. Bacciu, F. M. Bianchi, B. Paassen, C. Alippi</span>
 					<span class="venue">European Symposium on Artificial Neural Networks</span><br>
-				</li>
-				<li>
-					<a href="https://arxiv.org/abs/1907.09207"><b>Deep Learning for Time Series Forecasting: The Electric Load Case.</b></a><br>
-					<span class='authors'>A.Gasparin, S.Lukovic, C.Alippi</span>
-					<span class="venue">CAAI Transactions on Intelligence Technology</span><br>
-					<a class="collapsible"></a>
-					<div class="collapse-content">
-						 Management and efficient operations in critical infrastructure such as Smart Grids take huge advantage of accurate power load forecasting which, due to its nonlinear nature, remains a challenging task. Recently, deep learning has emerged in the machine learning field achieving impressive performance in a vast range of tasks, from image classification to machine translation. Applications of deep learning models to the electric load forecasting problem are gaining interest among researchers as well as the industry, but a comprehensive and sound comparison among different architectures is not yet available in the literature. This work aims at filling the gap by reviewing and experimentally evaluating on two real-world datasets the most recent trends in electric load forecasting, by contrasting deep learning architectures on short term forecast (one day ahead prediction). Specifically, we focus on feedforward and recurrent neural networks, sequence to sequence models and temporal convolutional neural networks along with architectural variants, which are known in the signal processing community but are novel to the load forecasting one.
-					</div>
 				</li>
 				<li>
 					<a href="https://www.ieee-jas.net/fileZDHXBEN/journal/article/zdhxbywb/newcreate/JAS-2021-0798.pdf"><b>Precise Agriculture: Effective Deep Learning Strategies to Detect Pest Insects.</b></a><br>
@@ -111,6 +111,17 @@
                     </div>
                 </li>
                 <li>
+					<a href="https://www.biorxiv.org/content/10.1101/2020.12.03.409979v1.abstract"><b>Seizure localisation with attention-based graph neural networks..</b></a><br>
+					<span class='authors'>D. Grattarola, L. Livi, C. Alippi, R. Wennberg, T. A. Valiante</span>
+					<span class="venue">Preprint</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						Graph neural networks (GNNs) and the attention mechanism are two of the most significant advances in artificial intelligence methods over the past few years. The former are neural networks able to process graph-structured data, while the latter learns to selectively focus on those parts of the input that are more relevant for the task at hand. In this paper, we propose a methodology for seizure localisation which combines the two approaches.
+						Our method is composed of several blocks. First, we represent brain states in a compact way by computing functional networks from intracranial electroencephalography recordings, using metrics to quantify the coupling between the activity of different brain areas. Then, we train a GNN to correctly distinguish between functional networks associated with interictal and ictal phases. The GNN is equipped with an attention-based layer which automatically learns to identify those regions of the brain (associated with individual electrodes) that are most important for a correct classification. The localisation of these regions is fully unsupervised, meaning that it does not use any prior information regarding the seizure onset zone.
+						We report results both for human patients and for simulators of brain activity. We show that the regions of interest identified by the GNN strongly correlate with the localisation of the seizure onset zone reported by electroencephalographers. We also show that our GNN exhibits uncertainty on those patients for which the clinical localisation was also unsuccessful, highlighting the robustness of the proposed approach.
+					</div>
+				</li>
+                <li>
 					<a href="https://arxiv.org/abs/2010.02860"><b>Learn to Synchronize, Synchronize to Learn.</b></a><br>
 					<span class='authors'>P. Verzelli, C. Alippi, L. Livi</span>
 					<span class="venue">Chaos</span><br>
@@ -126,6 +137,15 @@
 					<a class="collapsible"></a>
 					<div class="collapse-content">
 						Reservoir computing is a popular approach to design recurrent neural networks, due to its training simplicity and its approximation performance. The recurrent part of these networks is not trained (e.g. via gradient descent), making them appealing for analytical studies, raising the interest of a vast community of researcher spanning from dynamical systems to neuroscience. It emerges that, even in the simple linear case, the working principle of these networks is not fully understood and the applied research is usually driven by heuristics. A novel analysis of the dynamics of such networks is proposed, which allows one to express the state evolution using the controllability matrix. Such a matrix encodes salient characteristics of the network dynamics: in particular, its rank can be used as an input-indepedent measure of the memory of the network. Using the proposed approach, it is possible to compare different architectures and explain why a cyclic topology achieves favourable results.
+					</div>
+				</li>
+				<li>
+					<a href="https://arxiv.org/abs/1907.09207"><b>Deep Learning for Time Series Forecasting: The Electric Load Case.</b></a><br>
+					<span class='authors'>A.Gasparin, S.Lukovic, C.Alippi</span>
+					<span class="venue">CAAI Transactions on Intelligence Technology</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 Management and efficient operations in critical infrastructure such as Smart Grids take huge advantage of accurate power load forecasting which, due to its nonlinear nature, remains a challenging task. Recently, deep learning has emerged in the machine learning field achieving impressive performance in a vast range of tasks, from image classification to machine translation. Applications of deep learning models to the electric load forecasting problem are gaining interest among researchers as well as the industry, but a comprehensive and sound comparison among different architectures is not yet available in the literature. This work aims at filling the gap by reviewing and experimentally evaluating on two real-world datasets the most recent trends in electric load forecasting, by contrasting deep learning architectures on short term forecast (one day ahead prediction). Specifically, we focus on feedforward and recurrent neural networks, sequence to sequence models and temporal convolutional neural networks along with architectural variants, which are known in the signal processing community but are novel to the load forecasting one.
 					</div>
 				</li>
 				<li>
