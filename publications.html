@@ -79,12 +79,30 @@
 					</div>
 				</li>
 				<li>
+					<a href=""><b>Gaussian Approximation for Bias Reduction in Q-Learning.</b></a><br>
+					<span class='authors'>C. D'Eramo, A. Cini, A. Nuara, M. Pirotta, C. Alippi, J. Peters, M. Restelli</span>
+					<span class="venue">Journal of Machine Learning Research</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 Temporal-Difference off-policy algorithms are among the building blocks of reinforcement learning (RL). Within this family, Q-Learning is arguably the most famous one, which has been widely studied and extended. The update rule of $Q$-learning involves the use of the maximum operator to estimate the maximum expected value of the return. However, this estimate is positively biased, and may hinder the learning process, especially in stochastic environments and when function approximation is used. We introduce the Weighted Estimator as an effective solution to mitigate the negative effects of overestimation in Q-Learning. The Weighted Estimator estimates the maximum expected value as a weighted sum of the action values, with the weights being the probabilities that each action value is the maximum. In this work, we study the problem from the statistical perspective of estimating the maximum expected value of a set of random variables and provide bounds to the bias and the variance of the Weighted Estimator, showing its advantages over other estimators present in literature. Then, we derive algorithms to enable the use of the Weighted Estimator, in place of the Maximum Estimator, in online and batch RL, and we introduce a novel algorithm for deep RL. Finally, we empirically evaluate our algorithms in a large set of heterogeneous problems, encompassing discrete and continuous, low and high dimensional, deterministic and stochastic environments. Experimental results show the effectiveness of the Weighted Estimator in controlling the bias of the estimate, resulting in better performance than representative baselines and robust learning w.r.t. a large set of diverse environments.
+					</div>
+				</li>
+				<li>
 					<a href="https://arxiv.org/abs/2110.05292"><b>Understanding Pooling in Graph Neural Networks.</b></a><br>
 					<span class='authors'>D. Grattarola, D. Zambon, F. M. Bianchi, C. Alippi</span>
 					<span class="venue">Preprint</span><br>
 					<a class="collapsible"></a>
 					<div class="collapse-content">
 						 Inspired by the conventional pooling layers in convolutional neural networks, many recent works in the field of graph machine learning have introduced pooling operators to reduce the size of graphs. The great variety in the literature stems from the many possible strategies for coarsening a graph, which may depend on different assumptions on the graph structure or the specific downstream task. In this paper we propose a formal characterization of graph pooling based on three main operations, called selection, reduction, and connection, with the goal of unifying the literature under a common framework. Following this formalization, we introduce a taxonomy of pooling operators and categorize more than thirty pooling methods proposed in recent literature. We propose criteria to evaluate the performance of a pooling operator and use them to investigate and contrast the behavior of different classes of the taxonomy on a variety of tasks.
+					</div>
+				</li>
+				<li>
+					<a href="https://arxiv.org/abs/2108.00298"><b>Multivariate Time Series Imputation by Graph Neural Networks.</b></a><br>
+					<span class='authors'>A. Cini, I. Marisca, C. Alippi</span>
+					<span class="venue">Preprint</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 Dealing with missing values and incomplete time series is a labor-intensive and time-consuming inevitable task when handling data coming from real-world applications. Effective spatio-temporal representations would allow imputation methods to reconstruct missing temporal data by exploiting information coming from sensors at different locations. However, standard methods fall short in capturing the nonlinear time and space dependencies existing within networks of interconnected sensors and do not take full advantage of the available - and often strong - relational information. Notably, most of state-of-the-art imputation methods based on deep learning do not explicitly model relational aspects and, in any case, do not exploit processing frameworks able to adequately represent structured spatio-temporal data. Conversely, graph neural networks have recently surged in popularity as both expressive and scalable tools for processing sequential data with relational inductive biases. In this work, we present the first assessment of graph neural networks in the context of multivariate time series imputation. In particular, we introduce a novel graph neural network architecture, named GRIL, which aims at reconstructing missing data in the different channels of a multivariate time series by learning spatial-temporal representations through message passing. Preliminary empirical results show that our model outperforms state-of-the-art methods in the imputation task on relevant benchmarks with mean absolute error improvements often higher than 20%.
 					</div>
 				</li>
 				<li>
@@ -111,7 +129,7 @@
                     </div>
                 </li>
                 <li>
-					<a href="https://www.biorxiv.org/content/10.1101/2020.12.03.409979v1.abstract"><b>Seizure localisation with attention-based graph neural networks..</b></a><br>
+					<a href="https://www.biorxiv.org/content/10.1101/2020.12.03.409979v1.abstract"><b>Seizure localisation with attention-based graph neural networks.</b></a><br>
 					<span class='authors'>D. Grattarola, L. Livi, C. Alippi, R. Wennberg, T. A. Valiante</span>
 					<span class="venue">Preprint</span><br>
 					<a class="collapsible"></a>
@@ -204,14 +222,14 @@
                     </div>
                 </li>
                 <li>
-                    <a href="https://arxiv.org/abs/1907.00481"><b>Spectral Clustering with Graph Neural Networks for Graph Pooling.</b></a><br>
-                    <span class='authors'>F. M. Bianchi, D. Grattarola, C. Alippi</span>
-                    <span class="venue">International Conference on Machine Learning</span><br>
-                    <a class="collapsible"></a>
-                    <div class="collapse-content">
-                       We propose a graph clustering approach that addresses some limitations of the spectral clustering algorithm. We formulate a continuous relaxation of the normalized minCUT problem and train a GNN to compute cluster assignments that minimize this objective. Our GNN-based implementation is differentiable, does not require to compute the spectral decomposition, and learns a clustering function that can be quickly evaluated on out-of-sample graphs. From the proposed clustering method, we design a graph pooling operator that overcomes some important limitations of state-of-the-art graph pooling techniques and achieves the best performance in several supervised and unsupervised tasks.
-                    </div>
-                </li>
+					<a href="https://ieeexplore.ieee.org/document/9207503"><b>Cluster-based Aggregate Load Forecasting with Deep Neural Networks.</b></a><br>
+					<span class='authors'>A. Cini, S. Lukovic, C. Alippi</span>
+					<span class="venue"> International Joint Conference on Neural Networks</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 Highly accurate power demand forecasting represents one of key challenges of Smart Grid applications. In this setting, a large number of Smart Meters produces huge amounts of data that need to be processed to predict the load requested by the grid. Due to the high dimensionality of the problem, this often results in the adoption of simple aggregation strategies for the power that fail in capturing the relational information existing among the different types of user. A possible alternative, known as Cluster-based Aggregate Forecasting, consists in clustering the load profiles and, on top of that, building predictors of the aggregate at the cluster-level. In this work we explore the technique in the context of predictors based on deep recurrent neural networks and address the scalability issues presenting neural architectures adequate to process cluster-level aggregates. The proposed methods are finally evaluated both on a publicly available benchmark and a heterogenous dataset of Smart Meter data from an entire, medium-sized, Swiss town.
+					</div>
+				</li>
 
 <!----------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------->
