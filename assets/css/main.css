@@ -2446,7 +2446,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 1px;
+				border-top: solid 0px;
 				padding: 0.5em 0;
 			}
 

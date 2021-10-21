@@ -1,1 +1,30 @@
-theme: jekyll-theme-cayman
+title: Graph Machine Learning Group - Lugano
+description: "The Graph Machine Learning Group of the Swiss AI Lab IDSIA"
+
+include: 
+  - .htaccess
+  - .well-known
+
+exclude: 
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp

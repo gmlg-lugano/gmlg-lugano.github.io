@@ -1,9 +1,4 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>GMLG - Publications</title>
@@ -55,19 +50,124 @@
 			</header>
 
 			<ul class='def'>
-				<li><a href='#gnn'>    Graph Neural Networks</a></li>
-				<li><a href='#lnse'>   Learning in Non-Stationary Environments</a></li>
-				<li><a href='#rl'>     Reinforcement Learning</a></li>
-				<li><a href='#rnn'>    Dynamics of RNNs</a></li>
-				<li><a href='#others'> Others</a></li>
+				<li><a href='#2021'>2021</a></li>
+				<li><a href='#2020'>2020</a></li>
+				<li><a href='#2019'>2019</a></li>
+				<li><a href='#2018'>2018</a></li>
+				<li><a href='#2017'>2017</a></li>
 			</ul>
 
 			<ul class="alt" style="text-align: left;">
-				<h2 id='gnn'>Graph Neural Networks</h2>
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+				<h2 id='2021'>2021</h2>
+				<li>
+					<a href=""><b>Learning Graph Cellular Automata.</b></a><br>
+					<span class='authors'>D. Grattarola, L. Livi, C. Alippi</span>
+					<span class="venue">Neural Information Processing Systems</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						Cellular automata (CA) are a class of computational models that exhibit rich dynamics emerging from the local interaction of cells arranged in a regular lattice. 
+						In this work we focus on a generalised version of typical CA, called graph cellular automata (GCA), in which the lattice structure is replaced by an arbitrary graph. 
+						In particular, we extend previous work that used convolutional neural networks to learn the transition rule of conventional CA and we use graph neural networks to learn a variety of transition rules for GCA. 
+						First, we present a general-purpose architecture for learning GCA, and we show that it can represent any arbitrary GCA with finite and discrete state space. 
+						Then, we test our approach on three different tasks: 1) learning the transition rule of a GCA on a Voronoi tessellation; 2) imitating the behaviour of a group of flocking agents; 3) learning a rule that converges to a desired target state.
+					</div>
+				</li>
+				<li>
+					<a href=""><b>Deep learning for graphs (special session at ESANN 2021).</b></a><br>
+					<span class='authors'>D. Bacciu, F. M. Bianchi, B. Paassen, C. Alippi</span>
+					<span class="venue">European Symposium on Artificial Neural Networks</span><br>
+				</li>
+				<li>
+					<a href="https://arxiv.org/abs/1907.09207"><b>Deep Learning for Time Series Forecasting: The Electric Load Case.</b></a><br>
+					<span class='authors'>A.Gasparin, S.Lukovic, C.Alippi</span>
+					<span class="venue">CAAI Transactions on Intelligence Technology</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 Management and efficient operations in critical infrastructure such as Smart Grids take huge advantage of accurate power load forecasting which, due to its nonlinear nature, remains a challenging task. Recently, deep learning has emerged in the machine learning field achieving impressive performance in a vast range of tasks, from image classification to machine translation. Applications of deep learning models to the electric load forecasting problem are gaining interest among researchers as well as the industry, but a comprehensive and sound comparison among different architectures is not yet available in the literature. This work aims at filling the gap by reviewing and experimentally evaluating on two real-world datasets the most recent trends in electric load forecasting, by contrasting deep learning architectures on short term forecast (one day ahead prediction). Specifically, we focus on feedforward and recurrent neural networks, sequence to sequence models and temporal convolutional neural networks along with architectural variants, which are known in the signal processing community but are novel to the load forecasting one.
+					</div>
+				</li>
+				<li>
+					<a href="https://www.ieee-jas.net/fileZDHXBEN/journal/article/zdhxbywb/newcreate/JAS-2021-0798.pdf"><b>Precise Agriculture: Effective Deep Learning Strategies to Detect Pest Insects.</b></a><br>
+					<span class='authors'>L. Butera, A. Ferrante, M. Jermini, M. Prevostini, C. Alippi</span>
+					<span class="venue">Journal of Automatica Sinica</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 Pest  insect  monitoring  and  control  is  crucial  toensure a safe and profitable crop growth in all plantation types, aswell as guarantee food quality and limited use of pesticides. Weaim  at  extending  traditional  monitoring  by  means  of  traps,  byinvolving the general public in reporting the presence of insectsby  using  smartphones.  This  includes  the  largely  unexploredproblem  of  detecting  insects  in  images  that  are  taken  in  non-controlled  conditions.  Furthermore,  pest  insects  are,  in  manycases,  extremely  similar  to  other  species  that  are  harmless.Therefore,  computer  vision  algorithms  must  not  be  fooled  bythese  similar  insects,  not  to  raise  unmotivated  alarms.  In  thiswork,  we  study  the  capabilities  of  state-of-the-art  (SoA)  objectdetection models based on convolutional neural networks (CNN)for  the  task  of  detecting  beetle-like  pest  insects  on  non-homogeneous  images  taken  outdoors  by  different  sources.Moreover, we focus on disambiguating a pest insect from similarharmless species. We consider not only detection performance ofdifferent models, but also required computational resources. Thisstudy aims at providing a baseline model for this kind of tasks.Our results show the suitability of current SoA models for thisapplication, highlighting how FasterRCNN with a MobileNetV3backbone is a particularly good starting point for accuracy andinference execution latency. This combination provided a meanaverage  precision  score  of  92.66%  that  can  be  consideredqualitatively  at  least  as  good  as  the  score  obtained  by  otherauthors that adopted more specific models.
+					</div>
+				</li>
+				<li>
+                    <a href="https://openreview.net/forum?id=dlEJsyHGeaL"><b>Graph Edit Networks.</b></a><br>
+                    <span class='authors'>B. Paassen, D. Grattarola, D.Zambon, C. Alippi, B. Hammer</span>
+                    <span class='venue'>International Conference on Learning Representations</span><br>
+                    <a class="collapsible"></a>
+                    <div class="collapse-content">
+                       While graph neural networks have made impressive progress in classification and regression on graphs, few approaches to date perform time series prediction on graphs and those that do are mostly limited to edge changes. We suggest that graph edits are a more natural interface for graph-to-graph learning. In particular,  graph edits are general enough to describe any graph-to-graph change, not only edge changes, they are sparse, making them easier to understand for humans and more efficient computationally, and they are local, avoiding the need for pooling layers in graph neural networks. In this paper, we propose a simple linear layer - the graph edit network - which takes node embeddings as input and generates a sequence of graph edits that transform the input graph to the output graph. Theoretically, we show that a mapping between the node sets of two graphs is sufficient to construct training data for a graph edit network and that an optimal mapping yields edit scripts that are almost as short as the graph edit distance between the graphs. We further provide a proof-of-concept.
+                    </div>
+                </li>
                 <li>
+					<a href="https://arxiv.org/abs/2010.02860"><b>Learn to Synchronize, Synchronize to Learn.</b></a><br>
+					<span class='authors'>P. Verzelli, C. Alippi, L. Livi</span>
+					<span class="venue">Chaos</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						In recent years, the machine learning community has seen a continuous growing interest in research aimed at investigating dynamical aspects of both training procedures and perfected models. Of particular interest among recurrent neural networks, we have the Reservoir Computing (RC) paradigm for its conceptual simplicity and fast training scheme. Yet, the guiding principles under which RC operates are only partially understood. In this work, we study the properties behind learning dynamical systems with RC and propose a new guiding principle based on Generalized Synchronization (GS) granting its feasibility. We show that the well-known Echo State Property (ESP) implies and is implied by GS, so that theoretical results derived from the ESP still hold when GS does. However, by using GS one can profitably study the RC learning procedure by linking the reservoir dynamics with the readout training. Notably, this allows us to shed light on the interplay between the input encoding performed by the reservoir and the output produced by the readout optimized for the task at hand. In addition, we show that - as opposed to the ESP - satisfaction of the GS can be measured by means of the Mutual False Nearest Neighbors index, which makes effective to practitioners theoretical derivations.
+					</div>
+				</li>
+                <li>
+					<a href="https://arxiv.org/abs/2003.10585"><b>Input-to-State Representation in Linear Reservoir Dynamics.</b></a><br>
+					<span class='authors'>P. Verzelli, C. Alippi, L. Livi, P. Tino</span>
+					<span class="venue"> IEEE Transactions on Neural Networks and Learning Systems</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						Reservoir computing is a popular approach to design recurrent neural networks, due to its training simplicity and its approximation performance. The recurrent part of these networks is not trained (e.g. via gradient descent), making them appealing for analytical studies, raising the interest of a vast community of researcher spanning from dynamical systems to neuroscience. It emerges that, even in the simple linear case, the working principle of these networks is not fully understood and the applied research is usually driven by heuristics. A novel analysis of the dynamics of such networks is proposed, which allows one to express the state evolution using the controllability matrix. Such a matrix encodes salient characteristics of the network dynamics: in particular, its rank can be used as an input-indepedent measure of the memory of the network. Using the proposed approach, it is possible to compare different architectures and explain why a cyclic topology achieves favourable results.
+					</div>
+				</li>
+				<li>
+					<a href="https://arxiv.org/abs/1901.01343"><b>Graph Neural Networks with Convolutional ARMA Filters.</b></a><br>
+					<span class='authors'>F. M. Bianchi, D. Grattarola, L. Livi, C. Alippi</span>
+					<span class="venue">IEEE Transactions on Pattern Analysis and Machine Intelligence</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						We propose a novel graph convolutional layer based on auto-regressive moving average (ARMA) filters that, compared to the polynomial ones, provide a more flexible response thanks to a rich transfer function that accounts for the concept of state. We implement the ARMA filter with a recursive and distributed formulation, obtaining a convolutional layer that is efficient to train, is localized in the node space and can be applied to graphs with different topologies.
+					</div>
+				</li>
+
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+				<hr>
+				<h2 id='2020'>2020</h2>
+				<li>
+					<a href="https://arxiv.org/abs/2003.09280"><b>Deep Reinforcement Learning with Weighted Q-Learning.</b></a><br>
+					<span class='authors'>A. Cini, C. D'Eramo, J. Peter, C. Alippi</span>
+					<span class="venue">Preprint</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 Overestimation of the maximum action-value is a well-known problem that hinders Q-Learning performance, leading to suboptimal policies and unstable learning. Among several Q-Learning variants proposed to address this issue, Weighted Q-Learning (WQL) effectively reduces the bias and shows remarkable results in stochastic environments. WQL uses a weighted sum of the estimated action-values, where the weights correspond to the probability of each action-value being the maximum; however, the computation of these probabilities is only practical in the tabular settings. In this work, we provide the methodological advances to benefit from the WQL properties in Deep Reinforcement Learning (DRL), by using neural networks with Dropout Variational Inference as an effective approximation of deep Gaussian processes. In particular, we adopt the Concrete Dropout variant to obtain calibrated estimates of epistemic uncertainty in DRL. We show that model uncertainty in DRL can be useful not only for action selection, but also action evaluation. We analyze how the novel Weighted Deep Q-Learning algorithm reduces the bias wrt relevant baselines and provide empirical evidence of its advantages on several representative benchmarks.
+					</div>
+				</li>
+				<li>
+					<a href="https://arxiv.org/abs/1910.11436"><b>Hierarchical Representation Learning in Graph Neural Networks with Node Decimation Pooling.</b></a><br>
+					<span class='authors'>F. M. Bianchi, D. Grattarola, L. Livi, C. Alippi</span>
+					<span class="venue">IEEE Transactions on Neural Networks and Learning Systems</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+					   We propose Node Decimation Pooling (NDP), a pooling operator for GNNs that generates coarsened versions of a graph by leveraging on its topology only. During training, the GNN learns new representations for the vertices and fits them to a pyramid of coarsened graphs, which is computed in a pre-processing step. As theoretical contributions, we first demonstrate the equivalence between the MAXCUT partition and the node decimation procedure on which NDP is based. Then, we propose a procedure to sparsify the coarsened graphs for reducing the computational complexity in the GNN; we also demonstrate that it is possible to drop many edges without significantly altering the graph spectra of coarsened graphs.
+					</div>
+				</li>
+				<li>
                     <a href="https://arxiv.org/abs/1909.03790"><b>Graph Random Neural Features for Distance-Preserving Graph Representations.</b></a><br>
                     <span class='authors'>D. Zambon, C. Alippi, L. Livi</span>
-                    <span class='venue'>International Conference on Machine Learning (2020)</span> <br>
+                    <span class='venue'>International Conference on Machine Learning</span><br>
                     <a class="collapsible"></a>
                     <div class="collapse-content">
                        Graph Random Neural Features (GRNF) is a novel embedding method from graph-structured data to real vectors based on a family of graph neural networks. GRNF can be used within traditional processing methods or as a training-free input layer of a graph neural network. 
@@ -77,50 +177,30 @@
                 <li>
                     <a href="https://arxiv.org/abs/1907.00481"><b>Spectral Clustering with Graph Neural Networks for Graph Pooling.</b></a><br>
                     <span class='authors'>F. M. Bianchi, D. Grattarola, C. Alippi</span>
-                    <span class="venue">International Conference on Machine Learning (2020)</span><br>
+                    <span class="venue">International Conference on Machine Learning</span><br>
                     <a class="collapsible"></a>
                     <div class="collapse-content">
                        We propose a graph clustering approach that addresses some limitations of the spectral clustering algorithm. We formulate a continuous relaxation of the normalized minCUT problem and train a GNN to compute cluster assignments that minimize this objective. Our GNN-based implementation is differentiable, does not require to compute the spectral decomposition, and learns a clustering function that can be quickly evaluated on out-of-sample graphs. From the proposed clustering method, we design a graph pooling operator that overcomes some important limitations of state-of-the-art graph pooling techniques and achieves the best performance in several supervised and unsupervised tasks.
                     </div>
                 </li>
-				<li>
-					<a href="https://arxiv.org/abs/1910.11436"><b>Hierarchical Representation Learning in Graph Neural Networks with Node Decimation Pooling.</b></a><br>
-					<span class='authors'>F. M. Bianchi, D. Grattarola, L. Livi, C. Alippi</span>
-					<span class="venue">IEEE Transactions on Neural Networks and Learning Systems (2020)</span><br>
-					<a class="collapsible"></a>
-					<div class="collapse-content">
-					   We propose Node Decimation Pooling (NDP), a pooling operator for GNNs that generates coarsened versions of a graph by leveraging on its topology only. During training, the GNN learns new representations for the vertices and fits them to a pyramid of coarsened graphs, which is computed in a pre-processing step. As theoretical contributions, we first demonstrate the equivalence between the MAXCUT partition and the node decimation procedure on which NDP is based. Then, we propose a procedure to sparsify the coarsened graphs for reducing the computational complexity in the GNN; we also demonstrate that it is possible to drop many edges without significantly altering the graph spectra of coarsened graphs.
-					</div>
-				</li>
-				<li>
-					<a href="https://arxiv.org/abs/1901.01343"><b>Graph Neural Networks with Convolutional ARMA Filters.</b></a><br>
-					<span class='authors'>F. M. Bianchi, D. Grattarola, L. Livi, C. Alippi</span>
-					<span class="venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (2021)</span><br>
-					<a class="collapsible"></a>
-					<div class="collapse-content">
-						We propose a novel graph convolutional layer based on auto-regressive moving average (ARMA) filters that, compared to the polynomial ones, provide a more flexible response thanks to a rich transfer function that accounts for the concept of state. We implement the ARMA filter with a recursive and distributed formulation, obtaining a convolutional layer that is efficient to train, is localized in the node space and can be applied to graphs with different topologies.
-					</div>
-				</li>
-
-				<h2 id='lnse'>Learning in Non-Stationary Environments</h2>
-				<li>
-                    <a href="https://openreview.net/forum?id=dlEJsyHGeaL"><b>Graph Edit Networks.</b></a><br>
-                    <span class='authors'>B. Paassen, D. Grattarola, D.Zambon, C. Alippi, B. Hammer</span>
-                    <span class='venue'>International Conference on Learning Representations (2021)</span> <br>
-                    <a class="collapsible"></a>
-                    <div class="collapse-content">
-                       While graph neural networks have made impressive progress in classification and regression on graphs, few approaches to date perform time series prediction on graphs and those that do are mostly limited to edge changes. We suggest that graph edits are a more natural interface for graph-to-graph learning. In particular,  graph edits are general enough to describe any graph-to-graph change, not only edge changes, they are sparse, making them easier to understand for humans and more efficient computationally, and they are local, avoiding the need for pooling layers in graph neural networks. In this paper, we propose a simple linear layer - the graph edit network - which takes node embeddings as input and generates a sequence of graph edits that transform the input graph to the output graph. Theoretically, we show that a mapping between the node sets of two graphs is sufficient to construct training data for a graph edit network and that an optimal mapping yields edit scripts that are almost as short as the graph edit distance between the graphs. We further provide a proof-of-concept.
-                    </div>
-                </li>
                 <li>
-                    <a href="https://arxiv.org/abs/1805.07113"><b>Change-Point Methods on a Sequence of Graphs.</b></a><br>
-                    <span class='authors'>D. Zambon, C. Alippi, L. Livi</span>
-                    <span class='venue'>IEEE Transactions on Signal Processing (2019)</span> <br>
+                    <a href="https://arxiv.org/abs/1907.00481"><b>Spectral Clustering with Graph Neural Networks for Graph Pooling.</b></a><br>
+                    <span class='authors'>F. M. Bianchi, D. Grattarola, C. Alippi</span>
+                    <span class="venue">International Conference on Machine Learning</span><br>
                     <a class="collapsible"></a>
                     <div class="collapse-content">
-                        Given a finite sequence of graphs, we propose a methodology to identify possible changes in stationarity in the stochastic process that generated such graphs. We consider a general family of attributed graphs for which both topology (vertices and edges) and associated attributes are allowed to change over time, without violating the stationarity hypothesis. Novel Change-Point Methods (CPMs) are proposed that map graphs onto vectors, apply a suitable statistical test in vector space and detect changes –if any– according to a user-defined confidence level; an estimate for the change point is provided as well. We ground our methods on theoretical results that show how the inference in the numerical vector space is related to the one in graph domain, and vice-versa. 
+                       We propose a graph clustering approach that addresses some limitations of the spectral clustering algorithm. We formulate a continuous relaxation of the normalized minCUT problem and train a GNN to compute cluster assignments that minimize this objective. Our GNN-based implementation is differentiable, does not require to compute the spectral decomposition, and learns a clustering function that can be quickly evaluated on out-of-sample graphs. From the proposed clustering method, we design a graph pooling operator that overcomes some important limitations of state-of-the-art graph pooling techniques and achieves the best performance in several supervised and unsupervised tasks.
                     </div>
                 </li>
+
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+				<hr>
+				<h2 id='2019'>2019</h2>
 				<li>
 					<a href="https://arxiv.org/abs/1907.09207"><b>Deep Learning for Time Series Forecasting: The Electric Load Case.</b></a><br>
 					<span class='authors'>Alberto Gasparin, Slobodan Lukovic, C. Alippi</span>
@@ -131,27 +211,72 @@
 					</div>
 				</li>
 				<li>
+					<a href="https://arxiv.org/abs/1903.11691"><b>Echo State Networks with Self-Normalizing Activations on the Hyper-Sphere.</b></a><br>
+					<span class='authors'>P. Verzelli, C. Alippi, L. Livi</span>
+					<span class='venue'>Nature Scientific Reports</span> <br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						We propose a model of echo state networks that eliminates critical dependence on hyper-parameters, resulting in networks that provably cannot enter a chaotic regime and, at the same time, denotes nonlinear behavior in phase space characterized by a large memory of past inputs, comparable to the one of linear networks. Our contribution is supported by experiments corroborating our theoretical findings, showing that the proposed model displays dynamics that are rich-enough to approximate many common nonlinear systems used for benchmarking. 
+					</div>
+				</li>
+				<li>
 					<a href="https://arxiv.org/abs/1903.07299"><b>Autoregressive Models for Sequences of Graphs.</b></a><br>
 					<span class='authors'>D. Zambon, D. Grattarola, L. Livi, C. Alippi</span>
-					<span class="venue">International Joint Conference on Neural Networks (2019)</span><br>
+					<span class="venue">International Joint Conference on Neural Networks</span><br>
 					<a class="collapsible"></a>
 					<div class="collapse-content">
 						This paper proposes an autoregressive (AR) model for sequences of graphs, which generalizes traditional AR models. A first novelty consists in formalizing the AR model for a very general family of graphs, characterized by a variable topology, and attributes associated with nodes and edges. A graph neural network is also proposed to learn the AR function associated with the graph-generating process, and subsequently predict the next graph in a sequence.
 					</div>
 				</li>
 				<li>
+					<a href="https://arxiv.org/abs/1812.04314"><b>Adversarial Autoencoders with Constant-Curvature Latent Manifolds.</b></a><br>
+					<span class='authors'>D. Grattarola, L. Livi, C. Alippi</span>
+					<span class="venue">Applied Soft Computing</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 We introduce the constant-curvature manifold adversarial autoencoder (CCM-AAE), a probabilistic generative model trained to represent a data distribution on a constant-curvature Riemannian manifold (CCM). Our method works by matching the aggregated posterior of the CCM-AAE with a probability distribution defined on a CCM, so that the encoder implicitly learns to represent data on the CCM to fool the discriminator network. The geometric constraint is also explicitly imposed by jointly training the CCM-AAE to maximize the membership degree of the embeddings to the CCM.
+					</div>
+				</li>
+				<li>
+                    <a href="https://arxiv.org/abs/1805.07113"><b>Change-Point Methods on a Sequence of Graphs.</b></a><br>
+                    <span class='authors'>D. Zambon, C. Alippi, L. Livi</span>
+                    <span class='venue'>IEEE Transactions on Signal Processing</span> <br>
+                    <a class="collapsible"></a>
+                    <div class="collapse-content">
+                        Given a finite sequence of graphs, we propose a methodology to identify possible changes in stationarity in the stochastic process that generated such graphs. We consider a general family of attributed graphs for which both topology (vertices and edges) and associated attributes are allowed to change over time, without violating the stationarity hypothesis. Novel Change-Point Methods (CPMs) are proposed that map graphs onto vectors, apply a suitable statistical test in vector space and detect changes –if any– according to a user-defined confidence level; an estimate for the change point is provided as well. We ground our methods on theoretical results that show how the inference in the numerical vector space is related to the one in graph domain, and vice-versa. 
+                    </div>
+                </li>
+				<li>
 					<a href="https://arxiv.org/abs/1805.06299"><b>Change Detection in Graph Streams by Learning Graph Embeddings on Constant-Curvature Manifolds.</b></a><br>
 					<span class='authors'>D. Grattarola, D. Zambon, L. Livi, C. Alippi</span>
-					<span class="venue">IEEE Transactions on Neural Networks and Learning Systems (2019)</span><br>
+					<span class="venue">IEEE Transactions on Neural Networks and Learning Systems</span><br>
 					<a class="collapsible"></a>
 					<div class="collapse-content">
 						We focus on the problem of detecting changes in stationarity in a stream of attributed graphs. To this end, we introduce a novel change detection framework based on neural networks and Constant-curvature manifolds (CCMs), that takes into account the non-Euclidean nature of graphs. Our contribution in this work is twofold. First, via a novel approach based on adversarial learning, we compute graph embeddings by training an autoencoder to represent graphs on CCMs. Second, we introduce two novel change detection tests operating on CCMs.
 					</div>
 				</li>
+
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+				<hr>
+				<h2 id='2018'>2018</h2>
+				<li>
+					<a href="https://arxiv.org/abs/1810.01742"><b>A Characterization of the Edge of Criticality in Binary Echo State Networks.</b></a><br>
+					<span class='authors'>P. Verzelli, L. Livi, C. Alippi</span>
+					<span class="venue">IEEE International Workshop on Machine Learning for Signal Processing</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						We propose binary echo state networks (ESNs), which are architecturally equivalent to standard ESNs but consider binary activation functions and binary recurrent weights. For these networks, we derive a closed-form expression for the edge of criticality (EoC) in the autonomous case and perform simulations in order to assess their behavior in the case of noisy neurons and in the presence of a signal. We propose a theoretical explanation for the fact that the variance of the input plays a major role in characterizing the EoC. 
+					</div>
+				</li>
 				<li>
 					<a href="https://arxiv.org/abs/1805.01360"><b>Anomaly and Change Detection in Graph Streams through Constant-Curvature Manifold Embeddings.</b></a><br>
 					<span class='authors'>D. Zambon, L. Livi, C. Alippi</span>
-					<span class="venue">IEEE International Joint Conference on Neural Networks (2018)</span><br>
+					<span class="venue">IEEE International Joint Conference on Neural Networks</span><br>
 					<a class="collapsible"></a>
 					<div class="collapse-content">
 						We investigate how embedding graphs on constant-curvature manifolds (hyper-spherical and hyperbolic manifolds) impacts on the ability to detect changes in sequences of attributed graphs. The proposed methodology consists in embedding graphs into a geometric space and perform change detection there by means of conventional methods for numerical streams.
@@ -160,83 +285,30 @@
 				<li>
 					<a href="https://arxiv.org/abs/1706.06941"><b>Concept Drift and Anomaly Detection in Graph Streams.</b></a><br>
 					<span class='authors'>D. Zambon, C. Alippi, L. Livi</span>
-					<span class='venue'>IEEE Transactions on Neural Networks and Learning Systems (2018)</span> <br>
+					<span class='venue'>IEEE Transactions on Neural Networks and Learning Systems</span> <br>
 					<a class="collapsible"></a>
 					<div class="collapse-content">
 						 We consider stochastic processes generating graphs and propose a methodology for detecting changes in stationarity of such processes. The methodology acts by embedding every graph of the stream into a vector domain, where a conventional multivariate change detection procedure can be easily applied. We ground the soundness of our proposal by proving several theoretical results.
 					</div>
 				</li>
+
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+				<hr>
+				<h2 id='2017'>2017</h2>
 				<li>
 					<a href="https://ieeexplore.ieee.org/document/8285273"><b>Detecting Changes in Sequences of Attributed Graphs.</b></a><br>
 					<span class='authors'>D. Zambon, L. Livi, C. Alippi</span>
-					<span class="venue">IEEE Symposium Series on Computational Intelligence (2017)</span><br>
+					<span class="venue">IEEE Symposium Series on Computational Intelligence</span><br>
 					<a class="collapsible"></a>
 					<div class="collapse-content">
 						We consider a methodology for detecting changes in sequences of graphs. Changes are recognized by embedding each graph into a vector space, where conventional change detection procedures exist and can be easily applied. We introduce the methodology and focus on expanding experimental evaluations on controlled yet relevant examples involving geometric graphs and Markov chains.
 					</div>
 				</li>
-
-				<h2 id='rl'>Reinforcement Learning</h2>
-				<li>
-					<a href="https://arxiv.org/abs/1812.04314"><b>Deep Reinforcement Learning with Weighted Q-Learning.</b></a><br>
-					<span class='authors'>A. Cini, C. D'Eramo, J. Peter, C. Alippi</span>
-					<span class="venue">Preprint (2020)</span><br>
-					<a class="collapsible"></a>
-					<div class="collapse-content">
-						 Overestimation of the maximum action-value is a well-known problem that hinders Q-Learning performance, leading to suboptimal policies and unstable learning. Among several Q-Learning variants proposed to address this issue, Weighted Q-Learning (WQL) effectively reduces the bias and shows remarkable results in stochastic environments. WQL uses a weighted sum of the estimated action-values, where the weights correspond to the probability of each action-value being the maximum; however, the computation of these probabilities is only practical in the tabular settings. In this work, we provide the methodological advances to benefit from the WQL properties in Deep Reinforcement Learning (DRL), by using neural networks with Dropout Variational Inference as an effective approximation of deep Gaussian processes. In particular, we adopt the Concrete Dropout variant to obtain calibrated estimates of epistemic uncertainty in DRL. We show that model uncertainty in DRL can be useful not only for action selection, but also action evaluation. We analyze how the novel Weighted Deep Q-Learning algorithm reduces the bias wrt relevant baselines and provide empirical evidence of its advantages on several representative benchmarks.
-					</div>
-				</li>
-
-				<h2 id='rnn'>Dynamics of RNNs</h2>
-				<li>
-					<a href="https://arxiv.org/abs/2010.02860"><b>Learn to Synchronize, Synchronize to Learn.</b></a><br>
-					<span class='authors'>P. Verzelli, C. Alippi, L. Livi</span>
-					<span class="venue">Preprint (2020)</span><br>
-					<a class="collapsible"></a>
-					<div class="collapse-content">
-						In recent years, the machine learning community has seen a continuous growing interest in research aimed at investigating dynamical aspects of both training procedures and perfected models. Of particular interest among recurrent neural networks, we have the Reservoir Computing (RC) paradigm for its conceptual simplicity and fast training scheme. Yet, the guiding principles under which RC operates are only partially understood. In this work, we study the properties behind learning dynamical systems with RC and propose a new guiding principle based on Generalized Synchronization (GS) granting its feasibility. We show that the well-known Echo State Property (ESP) implies and is implied by GS, so that theoretical results derived from the ESP still hold when GS does. However, by using GS one can profitably study the RC learning procedure by linking the reservoir dynamics with the readout training. Notably, this allows us to shed light on the interplay between the input encoding performed by the reservoir and the output produced by the readout optimized for the task at hand. In addition, we show that - as opposed to the ESP - satisfaction of the GS can be measured by means of the Mutual False Nearest Neighbors index, which makes effective to practitioners theoretical derivations.
-					</div>
-				</li>
-				<li>
-					<a href="https://arxiv.org/abs/2003.10585"><b>Input Representation in Recurrent Neural Networks Dynamics.</b></a><br>
-					<span class='authors'>P. Verzelli, C. Alippi, L. Livi, P. Tino</span>
-					<span class="venue">Preprint (2020)</span><br>
-					<a class="collapsible"></a>
-					<div class="collapse-content">
-						Reservoir computing is a popular approach to design recurrent neural networks, due to its training simplicity and its approximation performance. The recurrent part of these networks is not trained (e.g. via gradient descent), making them appealing for analytical studies, raising the interest of a vast community of researcher spanning from dynamical systems to neuroscience. It emerges that, even in the simple linear case, the working principle of these networks is not fully understood and the applied research is usually driven by heuristics. A novel analysis of the dynamics of such networks is proposed, which allows one to express the state evolution using the controllability matrix. Such a matrix encodes salient characteristics of the network dynamics: in particular, its rank can be used as an input-indepedent measure of the memory of the network. Using the proposed approach, it is possible to compare different architectures and explain why a cyclic topology achieves favourable results.
-					</div>
-				</li>
-				<li>
-					<a href="https://arxiv.org/abs/1903.11691"><b>Echo State Networks with Self-Normalizing Activations on the Hyper-Sphere.</b></a><br>
-					<span class='authors'>P. Verzelli, C. Alippi, L. Livi</span>
-					<span class='venue'>Nature Scientific Reports (2019)</span> <br>
-					<a class="collapsible"></a>
-					<div class="collapse-content">
-						We propose a model of echo state networks that eliminates critical dependence on hyper-parameters, resulting in networks that provably cannot enter a chaotic regime and, at the same time, denotes nonlinear behavior in phase space characterized by a large memory of past inputs, comparable to the one of linear networks. Our contribution is supported by experiments corroborating our theoretical findings, showing that the proposed model displays dynamics that are rich-enough to approximate many common nonlinear systems used for benchmarking. 
-					</div>
-				</li>
-				<li>
-					<a href="https://arxiv.org/abs/1810.01742"><b>A Characterization of the Edge of Criticality in Binary Echo State Networks.</b></a><br>
-					<span class='authors'>P. Verzelli, L. Livi, C. Alippi</span>
-					<span class="venue">IEEE International Workshop on Machine Learning for Signal Processing (2018)</span><br>
-					<a class="collapsible"></a>
-					<div class="collapse-content">
-						We propose binary echo state networks (ESNs), which are architecturally equivalent to standard ESNs but consider binary activation functions and binary recurrent weights. For these networks, we derive a closed-form expression for the edge of criticality (EoC) in the autonomous case and perform simulations in order to assess their behavior in the case of noisy neurons and in the presence of a signal. We propose a theoretical explanation for the fact that the variance of the input plays a major role in characterizing the EoC. 
-					</div>
-				</li>
-
-				<h2 id='others'>Others</h2>
-				<li>
-					<a href="https://arxiv.org/abs/1812.04314"><b>Adversarial Autoencoders with Constant-Curvature Latent Manifolds.</b></a><br>
-					<span class='authors'>D. Grattarola, L. Livi, C. Alippi</span>
-					<span class="venue">Applied Soft Computing (2019)</span><br>
-					<a class="collapsible"></a>
-					<div class="collapse-content">
-						 We introduce the constant-curvature manifold adversarial autoencoder (CCM-AAE), a probabilistic generative model trained to represent a data distribution on a constant-curvature Riemannian manifold (CCM). Our method works by matching the aggregated posterior of the CCM-AAE with a probability distribution defined on a CCM, so that the encoder implicitly learns to represent data on the CCM to fool the discriminator network. The geometric constraint is also explicitly imposed by jointly training the CCM-AAE to maximize the membership degree of the embeddings to the CCM.
-					</div>
-				</li>
-				
-				
 			</ul>
 		</section>
 		</div>
