@@ -67,6 +67,24 @@
 <!----------------------------------------------------------------------------->
 				<h2 id='2022'>2022</h2>
 				<li>
+					<a href="https://arxiv.org/abs/2205.13479"><b>Learning to Reconstruct Missing Data from Spatiotemporal Graphs with Sparse Observations.</b></a><br>
+					<span class='authors'>I. Marisca, A. Cini, C. Alippi</span>
+					<span class="venue">Preprint</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 Modeling multivariate time series as temporal signals over a (possibly dynamic) graph is an effective representational framework that allows for developing models for time series analysis. In fact, discrete sequences of graphs can be processed by autoregressive graph neural networks to recursively learn representations at each discrete point in time and space. Spatiotemporal graphs are often highly sparse, with time series characterized by multiple, concurrent, and even long sequences of missing data, e.g., due to the unreliable underlying sensor network. In this context, autoregressive models can be brittle and exhibit unstable learning dynamics. The objective of this paper is, then, to tackle the problem of learning effective models to reconstruct, i.e., impute, missing data points by conditioning the reconstruction only on the available observations. In particular, we propose a novel class of attention-based architectures that, given a set of highly sparse discrete observations, learn a representation for points in time and space by exploiting a spatiotemporal diffusion architecture aligned with the imputation task. Representations are trained end-to-end to reconstruct observations w.r.t. the corresponding sensor and its neighboring nodes. Compared to the state of the art, our model handles sparse data without propagating prediction errors or requiring a bidirectional model to encode forward and backward time dependencies. Empirical results on representative benchmarks show the effectiveness of the proposed method.
+					</div>
+				</li>
+				<li>
+					<a href="https://arxiv.org/abs/2205.13492"><b>Sparse Graph Learning for Spatiotemporal Time Series.</b></a><br>
+					<span class='authors'>A. Cini, D. Zambon, C. Alippi</span>
+					<span class="venue">Preprint</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 Outstanding achievements of graph neural networks for spatiotemporal time series prediction show that relational constraints introduce a positive inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data generating process is unavailable; the practitioner is then left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled -- yet practical -- probabilistic methods that learn the relational dependencies by modeling distributions over graphs while maximizing, at the same time, end-to-end the forecasting accuracy. Our novel graph learning approach, based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded and effective. We show that tailoring the gradient estimators to the graph learning problem allows us also for achieving state-of-the-art forecasting performance while controlling, at the same time, both the sparsity of the learned graph and the computational burden. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a learned component of an end-to-end forecasting architecture.
+					</div>
+				</li>
+				<li>
 					<a href=""><b>Spatio-Temporal Graph Neural Networks for Aggregate Load Forecasting.</b></a><br>
 					<span class='authors'>S. Eandi, A. Cini, S. Lukovic, C. Alippi</span>
 					<span class="venue">To appear in IEEE International Joint Conference on Neural Networks</span><br>
