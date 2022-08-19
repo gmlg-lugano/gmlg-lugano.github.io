@@ -121,6 +121,15 @@
 						We present the first whiteness test for graphs, i.e., a whiteness test for multivariate time series associated with the nodes of a dynamic graph. The statistical test aims at finding serial dependencies among close-in-time observations, as well as spatial dependencies among neighboring observations given the underlying graph. The proposed test is a spatio-temporal extension of traditional tests from the system identification literature and finds applications in similar, yet more general, application scenarios involving graph signals. The AZ-test is versatile, allowing the underlying graph to be dynamic, changing in topology and set of nodes, and weighted, thus accounting for connections of different strength, as is the case in many application scenarios like transportation networks and sensor grids. The asymptotic distribution --- as the number of graph edges or temporal observations increases --- is known, and does not assume identically distributed data. We validate the practical value of the test on both synthetic and real-world problems, and show how the test can be employed to assess the quality of spatio-temporal forecasting models by analyzing the prediction residuals appended to the graphs stream.
 					</div>
 				</li>
+				<li>
+					<a href="https://arxiv.org/abs/2110.05292"><b>Understanding Pooling in Graph Neural Networks.</b></a><br>
+					<span class='authors'>D. Grattarola, D. Zambon, F. M. Bianchi, C. Alippi</span>
+					<span class="venue">IEEE Transactions on Neural Networks and Learning Systems</span><br>
+					<a class="collapsible"></a>
+					<div class="collapse-content">
+						 Inspired by the conventional pooling layers in convolutional neural networks, many recent works in the field of graph machine learning have introduced pooling operators to reduce the size of graphs. The great variety in the literature stems from the many possible strategies for coarsening a graph, which may depend on different assumptions on the graph structure or the specific downstream task. In this paper we propose a formal characterization of graph pooling based on three main operations, called selection, reduction, and connection, with the goal of unifying the literature under a common framework. Following this formalization, we introduce a taxonomy of pooling operators and categorize more than thirty pooling methods proposed in recent literature. We propose criteria to evaluate the performance of a pooling operator and use them to investigate and contrast the behavior of different classes of the taxonomy on a variety of tasks.
+					</div>
+				</li>
 
 <!----------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------->
@@ -150,15 +159,6 @@
 					<a class="collapsible"></a>
 					<div class="collapse-content">
 						 Temporal-Difference off-policy algorithms are among the building blocks of reinforcement learning (RL). Within this family, Q-Learning is arguably the most famous one, which has been widely studied and extended. The update rule of Q-learning involves the use of the maximum operator to estimate the maximum expected value of the return. However, this estimate is positively biased, and may hinder the learning process, especially in stochastic environments and when function approximation is used. We introduce the Weighted Estimator as an effective solution to mitigate the negative effects of overestimation in Q-Learning. The Weighted Estimator estimates the maximum expected value as a weighted sum of the action values, with the weights being the probabilities that each action value is the maximum. In this work, we study the problem from the statistical perspective of estimating the maximum expected value of a set of random variables and provide bounds to the bias and the variance of the Weighted Estimator, showing its advantages over other estimators present in literature. Then, we derive algorithms to enable the use of the Weighted Estimator, in place of the Maximum Estimator, in online and batch RL, and we introduce a novel algorithm for deep RL. Finally, we empirically evaluate our algorithms in a large set of heterogeneous problems, encompassing discrete and continuous, low and high dimensional, deterministic and stochastic environments. Experimental results show the effectiveness of the Weighted Estimator in controlling the bias of the estimate, resulting in better performance than representative baselines and robust learning w.r.t. a large set of diverse environments.
-					</div>
-				</li>
-				<li>
-					<a href="https://arxiv.org/abs/2110.05292"><b>Understanding Pooling in Graph Neural Networks.</b></a><br>
-					<span class='authors'>D. Grattarola, D. Zambon, F. M. Bianchi, C. Alippi</span>
-					<span class="venue">Preprint</span><br>
-					<a class="collapsible"></a>
-					<div class="collapse-content">
-						 Inspired by the conventional pooling layers in convolutional neural networks, many recent works in the field of graph machine learning have introduced pooling operators to reduce the size of graphs. The great variety in the literature stems from the many possible strategies for coarsening a graph, which may depend on different assumptions on the graph structure or the specific downstream task. In this paper we propose a formal characterization of graph pooling based on three main operations, called selection, reduction, and connection, with the goal of unifying the literature under a common framework. Following this formalization, we introduce a taxonomy of pooling operators and categorize more than thirty pooling methods proposed in recent literature. We propose criteria to evaluate the performance of a pooling operator and use them to investigate and contrast the behavior of different classes of the taxonomy on a variety of tasks.
 					</div>
 				</li>
 				<li>
