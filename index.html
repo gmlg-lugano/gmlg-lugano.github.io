@@ -1,212 +1,84 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
-<head>
-    <title>Graph Machine Learning Group</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/particles.css" />
-    <link rel="stylesheet" href="assets/css/collapsible.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125823175-2"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-125823175-2');
-    </script>
-</head>
-
-<body class="is-preload">
-    <div id="particles-js"></div>
-    <!-- Wrapper -->
-    <div id="wrapper">
-        <!-- Header -->
-        <header id="header" class="alt">
-            <span class="logo"><img src="images/logo.svg" alt="" /></span>
-            <h1>Graph Machine Learning Group</h1>
-            <p>Graph machine learning &bull; Non-stationary environments &bull; Reinforcement learning &bull; Dynamical systems</p>
-            <p><span class="icon solid fa-map-marker-alt"></span>&nbsp;&nbsp;<a href="https://usi.ch">Università della Svizzera italiana</a></p>
-        </header>
-        <!-- Nav -->
-        <nav id="nav">
-            <ul>
-                <li><a href="/index.html" class="active">About</a></li>
-                <li><a href="/people.html">People</a></li>
-                <li><a href="/publications.html">Publications</a></li>
-            </ul>
-        </nav>
-        <!-- Main -->
-        <div id="main">
-            <!-- Introduction -->
-            <section id="about" class="main">
-                <div class="spotlight">
-                    <div class="content">
-                        <header class="major">
-                            <h2>About GMLG</h2>
-                        </header>
-                        <p>We are a research team part of the <a href="http://www.idsia.ch/">Swiss AI Lab (IDSIA)</a> at <a href="https://usi.ch/">Università della Svizzera italiana</a>, Lugano, Switzerland. The group is led by Prof. Cesare Alippi.
-                        </p>
-                        <p>Meet <a href='/people.html'>our team</a> and check out <a href='/publications.html'>our publications</a>.
-                        </p>
-                    </div>
-                    <span class="image"><img src="images/press-usi-campus-est-01.jpg" alt="" /></span>
-                </div>
-                <div class="spotlight">
-                    <div class="content">
-                        <h2>News</h2>
-                        <ul>
-                            <li>Two new papers accepted at NeurIPS 2022!<br/>&nbsp;&nbsp;&nbsp;
-                                AZ-whiteness test (<a href="https://arxiv.org/abs/2204.11135">Zambon &amp; Alippi, 2022</a>),&nbsp;
-                                SPIN (<a href="https://arxiv.org/abs/2205.13479">Marisca, Cini &amp; Alippi, 2022</a>).
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!-- Publications -->
-            <section id="publications" class="main">
-                <header class="major">
-                    <h2>Research</h2>
-                </header>
-                <p>Our research focuses on graph machine learning, non-stationary environments, dynamical systems, and reinforcement learning.<br>
-                    We also apply machine learning in many diverse fields, including neuroscience, power grids, chemistry, and agriculture, among many others.</p>
-                <p><a href='/publications.html'>See the complete list of our publications.</a></p>
-            </section>
-            <!-- Projects -->
-            <section id="oss" class="main">
-                <header class="major">
-                    <h2>Open Source</h2>
-                </header>
-                <p>Our group is active in open source software development and we maintain several Python libraries based on our research. Check out also the <a href="https://github.com/Graph-Machine-Learning-Group">group GitHub page</a> for code related to our papers.</p>
-                <div class="cards">
-                    <div class="card">
-                        <div class="card__image">
-                        	<img src="images/logo_spektral.svg" alt="" />
-                        </div>
-                        <div class="card__content">
-                        <h3 class="card__title"><b><a href="https://graphneural.network/" class="name">Spektral</a></b></h3>
-                        <p>A library for building graph neural networks in Keras and Tensorflow.</p>
-                        <div class="card__action"><a href="https://graphneural.network/">Website <i class="fas fa-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__image">
-                        	<img src="images/logo_cdg.svg" alt="" />
-                        </div>
-                        <div class="card__content">
-                        <h3 class="card__title"><b><a href="https://github.com/dzambon/cdg" class="name">CDG</a></b></h3>
-                        <p>A Python library for detecting changes in stationarity in sequences of graphs.</p>
-                        <div class="card__action"><a href="https://github.com/dzambon/cdg">GitHub <i class="fas fa-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__image">
-                        	<img src="images/tsl.svg" alt="" />
-                        </div>
-                        <div class="card__content">
-                        <h3 class="card__title"><b><a href="https://github.com/TorchSpatiotemporal/tsl" class="name">Torch Spatiotemporal</a></b></h3>
-                        <p>A library for neural spatiotemporal data processing, with a focus on Graph Neural Networks.</p>
-                        <div class="card__action"><a href="https://github.com/TorchSpatiotemporal/tsl">GitHub <i class="fas fa-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__image">
-                        	<img src="images/logo_dts.svg" alt="" />
-                        </div>
-                        <div class="card__content">
-                        <h3 class="card__title"><b><a href="https://github.com/albertogaspar/dts" class="name">DTS</a></b></h3>
-                        <p>A Keras library that provides multiple deep architectures for multi-step time-series forecasting.</p>
-                        <div class="card__action"><a href="https://github.com/albertogaspar/dts">GitHub <i class="fas fa-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ul class="oss">
-                    <li>
-                        <span class="image">
-                            <a href="https://danielegrattarola.github.io/spektral">
-                                <img src="images/logo_spektral.svg" alt="" />
-                            </a>
-                        </span>
-                        <h3><b><a href="https://danielegrattarola.github.io/spektral" class="name">Spektral</a></b></h3>
-                        <p>A library for building graph neural networks in Keras and Tensorflow.</p>
-                    </li>
-                    <li>
-                        <span class="image">
-                            <a href="https://github.com/dzambon/cdg">
-                                <img src="images/logo_cdg.svg" alt="" />
-                            </a>
-                        </span>
-                        <h3><b><a href="https://github.com/dzambon/cdg" class="name">CDG</a></b></h3>
-                        <p>A Python library for detecting changes in stationarity in sequences of graphs.</p>
-                    </li>
-                    <li>
-                        <span class="image">
-                            <a href="https://github.com/TorchSpatiotemporal/tsl">
-                                <img src="https://avatars.githubusercontent.com/u/101520802?s=200&v=4" alt="" />
-                            </a>
-                        </span>
-                        <h3><b><a href="https://github.com/TorchSpatiotemporal/tsl" class="name">Torch Spatiotemporal</a></b></h3>
-                        <p>A library for neural spatiotemporal data processing, with a focus on Graph Neural Networks.</p>
-                    </li>
-                    <li>
-                        <span class="image">
-                            <a href="https://github.com/albertogaspar/dts">
-                                <img src="images/logo_dts.svg" alt="" />
-                            </a>
-                        </span>
-                        <h3><b><a href="https://github.com/albertogaspar/dts" class="name">DTS</a></b></h3>
-                        <p>A Keras library that provides multiple deep architectures for multi-step time-series forecasting.</p>
-                    </li>
-                </ul -->
-                <p>The development of Spektral and CDG was supported by project ALPSFORT (200021 172671) of the Swiss National Science Foundation.</p>
-            </section>
+---
+layout: default
+---
+<!-- Header-->
+<header class="text-white transparent-background">
+    <div class="container px-4 text-center">
+        <div class="row g-4 justify-content-center align-items-top text-center">
+            <div class="col-lg-8">
+                <div class="logo"><img src="{{site.url}}/assets/img/logo/logo.svg" alt="Graph Machine Learning Group" /></div>
+                <h1 class="fw-bolder">Graph Machine Learning Group</h1>
+                <p class="lead">Graph machine learning &bull; Non-stationary environments &bull; Spatiotemporal data &bull; Reinforcement learning &bull; Dynamical systems</p>
+                <p><a href="https://usi.ch" class="text-white"><i><svg class="bi me-2 align-top" width="1.25rem" height="1.25rem" fill="currentColor">
+                                <use xlink:href="#usi-icon" /></svg></i>Università della Svizzera italiana</a></p>
+            </div>
         </div>
-        <!-- Footer -->
-        <footer id="footer">
-            <section>
-                <h2>Contacts</h2>
-                <dl class="alt">
-                    <dt>Address</dt>
-                    <dd>Università della Svizzera italiana</dd>
-                    <dd>Via Giuseppe Buffi, 13 &bull; 6900 Lugano &bull; Switzerland</dd>
-                    <dt>Email</dt>
-                    <dd><a href="#">info@gmlg.ch</a></dd>
-                </dl>
-            </section>
-            <section>
-                <h2>Social</h2>
-                <ul class="icons">
-                    <li><a href="https://twitter.com/GMLG_Lugano" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCbdL8uWxPCRzV3HYQhMKGuA" class="icon brands fa-youtube alt"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://github.com/GMLG-Lugano" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-                </ul>
-            </section>
-            <p class="copyright">&copy; Graph Machine Learning Group @ IDSIA. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-        </footer>
+</header>
+<!-- About section-->
+<section id="about">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>About GMLG</h2>
+                <p class="lead">We are a research team part of the <a href="http://www.idsia.ch/">Swiss AI Lab (IDSIA)</a> at <a href="https://usi.ch/">Università della Svizzera italiana</a>, Lugano, Switzerland. The group is led by Prof. Cesare Alippi.</p>
+                <a  class="btn btn-outline-primary" href="{{site.url}}/people.html" role="button">Meet our team</a>
+            </div>
+        </div>
     </div>
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/particles-app.js"></script>
-    <script src="assets/js/collapsible.js"></script>
-</body>
-
-</html>
+</section>
+<!-- News section-->
+<section class="bg-light">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-center">News</h2>
+                <ul style="padding-left: 6rem;">
+                    {% for news in site.data.news limit:3 %}
+                    <li style="list-style: '{{news.date}} &bull; ';">{{news.text}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Research section-->
+<section class="text-white transparent-background">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>Research</h2>
+                <p class="lead">Our research focuses on <mark>graph machine learning</mark>, <mark>non-stationary environments</mark>, <mark>dynamical systems</mark>, and <mark>reinforcement learning</mark>.<br>
+                We also apply machine learning in many diverse fields, including neuroscience, power grids, chemistry, and agriculture, among many others.</p>
+                <a  class="btn btn-outline-light" href="{{site.url}}/publications.html" role="button">Our publications</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Open Source section-->
+<section id="contact">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>Open Source</h2>
+                <p class="lead">Our group is active in open source software development and we maintain several Python libraries based on our research. Check out also the <a href="https://github.com/Graph-Machine-Learning-Group">group GitHub page</a> for code related to our papers.</p>
+                <div class="card-series">
+                    {% for os_project in site.data.open_source %}
+                    <div class="card horizontal-card">
+                        <div class="horizontal-card-image">
+                            <img src="{{site.url}}/assets/img/open_source/{{os_project.img}}" alt="" />
+                        </div>
+                        <div class="horizontal-card-content">
+                            <h5 class="horizontal-card-title"><b>{{os_project.name}}</b></h5>
+                            <p>{{os_project.description}}</p>
+                            <div class="horizontal-card-action">
+                                {% include links_list.html links=os_project.links%}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <p class="text-muted">The development of Spektral and CDG was supported by project ALPSFORT (200021 172671) of the Swiss National Science Foundation.</p>
+            </div>
+        </div>
+    </div>
+</section>
