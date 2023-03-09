@@ -27,6 +27,23 @@
     - spatiotemporal graphs
     - residual analysis
   abstract: This paper introduces a novel residual correlation analysis, called AZ-analysis, to assess the optimality of spatio-temporal predictive models. The proposed AZ-analysis constitutes a valuable asset for discovering and highlighting those space-time regions where the model can be improved with respect to performance. The AZ-analysis operates under very mild assumptions and is based on a spatio-temporal graph that encodes serial and functional dependencies in the data; asymptotically distribution-free summary statistics identify existing residual correlation in space and time regions, hence localizing time frames and/or communities of sensors, where the predictor can be improved.
+- title: "Peak shaving in distribution networks using stationary energy storage systems: A Swiss case study"
+  links:
+    paper: https://www.sciencedirect.com/science/article/pii/S2352467723000267
+  venue: Sustainable Energy, Grids and Networks, Volume 34
+  year: 2023
+  authors:
+  - Nikolaos A. Efkarpidis
+  - id:simoscopi
+  - Martin Geidl
+  - id:acini
+  - id:slukovic
+  - id:calippi
+  - Ingo Herbst
+  keywords:
+    - forecasting
+    - energy analytics
+  abstract: Grid operators are charged not only by their total energy demand, but also by their highest power demand from the superior grid level. The maximum demand charge is usually imposed on the peak power point of the monthly load profile, hence, shaving demand at peak times is of main concern for the aforesaid stakeholders. In this paper, we present an approach for peak shaving in a distribution grid using a battery energy storage. The developed algorithm is applied and tested with data from a real stationary battery installation at a Swiss utility. This paper proposes a battery storage control scheme that can be used for peak shaving of the total grid load under realistic conditions. Particularly, a rule-based approach combined with a deep-learning load forecasting model is developed and its performance is compared with the theoretical optimum based on real data from the field. The analysis includes both technical and economical results from a simulated storage operation and significant outcomes are given for the application of this method.
 - title: Graph State-Space Models
   links:
     paper: https://arxiv.org/abs/2301.01741
